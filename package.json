@@ -1,6 +1,14 @@
 {
+  "homepage": "https://oneluv1.github.io/GPPD-App/",
   "dependencies": {
     "fs": "^0.0.1-security",
     "http": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   }
 }
